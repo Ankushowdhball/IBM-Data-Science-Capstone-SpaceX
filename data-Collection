@@ -1,5 +1,0 @@
-git clone https://github.com/Ankushowdhball/IBM-Data-Science-Capstone-SpaceX.git
-cd IBM-Data-Science-Capstone-SpaceX
-git rm data-Collection
-git commit -m "Delete data-Collection file"
-git push
