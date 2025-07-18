@@ -36,118 +36,117 @@ Can we predict whether a Falcon 9 first-stage will land successfully and visuali
 This solution empowers decision-making for bidding, cost estimation, and evaluating launch feasibility.
 
 ## 🗂 Project Structure
-bash
-Copy
-Edit
-IBM-Data-Science-Capstone-SpaceX/
-├── data/                 # Clean & final datasets
-│   ├── spacex.csv
-│   └── spacex_launch_geo.csv
-│
-├── data-collection/      # Raw data, SQL notebooks, API & scraping
-│   ├── *.ipynb, *.csv
-│
-├── notebooks/            # Main ML & EDA notebooks
-│   ├── EDA_SpaceX.ipynb
-│   ├── SQL_Analysis.ipynb
-│   └── ML_Modeling.ipynb
-│
-├── dashboard/            # Interactive Plotly Dash App
-│   ├── spacex_dash_app.py
-│   └── spacex_launch_dash.csv
-│
-├── visuals/              # Images used in README or slides
-│   ├── dashboard_screenshot.png
-│   ├── confusion_matrix.png
-│   └── folium_map.png
-│
-├── presentation/         # Final report
-│   ├── IBM_Capstone_SpaceX_Report.pptx
-│   └── IBM_Capstone_SpaceX_Report.pdf
-│
-└── README.md
+
+| Folder / File                         | Description                                  |
+| ------------------------------------- | -------------------------------------------- |
+| `data/`                               | Clean & final datasets                       |
+| ├── `spacex.csv`                      | Final launch data                            |
+| └── `spacex_launch_geo.csv`           | Geolocation data for launch sites            |
+| `data-collection/`                    | Raw data, SQL notebooks, API & scraping      |
+| ├── `*.ipynb`, `*.csv`                | Raw notebooks and collected data             |
+| `notebooks/`                          | Main ML & EDA notebooks                      |
+| ├── `EDA_SpaceX.ipynb`                | Exploratory Data Analysis notebook           |
+| ├── `SQL_Analysis.ipynb`              | SQL queries for SpaceX database              |
+| └── `ML_Modeling.ipynb`               | Machine Learning and classification modeling |
+| `dashboard/`                          | Interactive Plotly Dash App                  |
+| ├── `spacex_dash_app.py`              | Main Dash app script                         |
+| └── `spacex_launch_dash.csv`          | Data used in dashboard                       |
+| `visuals/`                            | Images used in README or presentation        |
+| ├── `dashboard_screenshot.png`        | Dashboard screenshot                         |
+| ├── `confusion_matrix.png`            | Model evaluation confusion matrix            |
+| └── `folium_map.png`                  | Geospatial map created with Folium           |
+| `presentation/`                       | Final report files                           |
+| ├── `IBM_Capstone_SpaceX_Report.pptx` | PowerPoint presentation                      |
+| └── `IBM_Capstone_SpaceX_Report.pdf`  | PDF version of the report                    |
+| `README.md`                           | Project overview and documentation           |
+
 
 ## 🔍 Methodology
 1. Data Collection
-✅ SpaceX Launch API (REST)
-
-✅ Web scraping from Wikipedia
-
-✅ SQL-based dataset joins
+   
+    ✅ SpaceX Launch API (REST)
+    
+    ✅ Web scraping from Wikipedia
+    
+    ✅ SQL-based dataset joins
 
 2. Data Wrangling
-Removed nulls, merged launch site data, and feature engineering for success labels.
+    - Removed nulls, merged launch site data, and feature engineering for success labels.
 
 3. Exploratory Data Analysis
-Launch trends across years, orbits, and payload ranges.
-
-Correlations between booster versions and outcomes.
-
-SQL queries on launch frequencies and success rates.
+   
+    - Launch trends across years, orbits, and payload ranges.
+    - Correlations between booster versions and outcomes.
+    - SQL queries on launch frequencies and success rates.
 
 4. Dashboard Development
-Built an interactive web app using Plotly Dash.
-
-Includes dynamic pie charts, sliders, and scatter plots.
+   
+    - Built an interactive web app using Plotly Dash.      
+    - Includes dynamic pie charts, sliders, and scatter plots.
 
 5. Machine Learning
-Preprocessing: Normalization, encoding
-
-Models built:
-
-Logistic Regression
-
-Support Vector Machine
-
-Decision Tree Classifier
-
-K-Nearest Neighbors (KNN)
-
-GridSearchCV for hyperparameter tuning
+   
+    - Preprocessing: Normalization, encoding
+      
+    - Models built:
+      
+         - Logistic Regression
+          
+         - Support Vector Machine
+          
+         - Decision Tree Classifier
+          
+         - K-Nearest Neighbors (KNN)
+      
+    - GridSearchCV for hyperparameter tuning
 
 ## 📊 Dashboard Preview
 Run the Dash app locally:
 
-bash
-Copy
-Edit
 cd dashboard
 python spacex_dash_app.py
+
 Navigate to: http://localhost:8050
 
-Key Features:
-
-✅ Filter by launch site
-
-✅ Select payload range
-
-✅ Visualize payload-success relationships
+  Key Features:
+  
+  ✅ Filter by launch site
+  
+  ✅ Select payload range
+  
+  ✅ Visualize payload-success relationships
 
 <p align="center"> <img src="visuals/dashboard_screenshot.png" width="800" alt="Dash App Screenshot"> </p>
 
 ## 🧠 Modeling & Results
-Algorithm	Accuracy (Test)	Best CV Score
-Logistic Regression	0.84	0.86
-Support Vector Machine	0.82	0.84
-Decision Tree Classifier	0.85	0.87
-K Nearest Neighbors	0.83	0.85
+
+
+| Algorithm               | Accuracy (Test) | Best CV Score |
+|------------------------|-----------------|----------------|
+| Logistic Regression     | 0.84            | 0.86           |
+| Support Vector Machine  | 0.82            | 0.84           |
+| Decision Tree Classifier| 0.85            | **0.87**       |
+| K Nearest Neighbors     | 0.83            | 0.85           |
+
+
 
 ## 🎯 Best Performing Model: Decision Tree Classifier with 87% cross-validation accuracy.
 
 <p align="center"> <img src="visuals/confusion_matrix.png" width="500" alt="Confusion Matrix"> </p>
 
 ## 🛠 Key Skills & Tools
-Languages: Python, SQL
-
-Libraries: Pandas, NumPy, Plotly, Scikit-Learn, Matplotlib, Seaborn, BeautifulSoup
-
-Dashboards: Plotly Dash (interactive visualization)
-
-Maps: Folium
-
-ML Techniques: Classification, GridSearchCV, Confusion Matrix, Accuracy Comparison
-
-Version Control: Git & GitHub
+  **Languages**: Python, SQL
+  
+  **Libraries**: Pandas, NumPy, Plotly, Scikit-Learn, Matplotlib, Seaborn, BeautifulSoup
+  
+  **Dashboards**: Plotly Dash (interactive visualization)
+  
+  **Maps**: Folium
+  
+  **ML Techniques:** Classification, GridSearchCV, Confusion Matrix, Accuracy Comparison
+  
+  **Version Control:** Git & GitHub
+  
 
 ## 🏅 Certificate
 This project was submitted as part of:
