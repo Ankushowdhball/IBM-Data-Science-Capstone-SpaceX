@@ -4,7 +4,7 @@ Welcome to the final project of the IBM Data Science Professional Certificate �
 
 <p align="center"> <img src="visuals/dashboard_screenshot.png" width="900" alt="SpaceX Dashboard"> </p>
 
-📄 Summary
+## 📄 Summary
 This capstone project is the culmination of the IBM Data Science Professional Certificate program.
 The goal: predict whether the SpaceX Falcon 9 first-stage rocket will successfully land.
 We explore the entire data science workflow—from data gathering to dashboard development and ML model comparison.
@@ -13,28 +13,29 @@ This repository focuses on analyzing and visualizing SpaceX launch data using we
 
 📍 Full dashboard and machine learning workflow built from scratch using real-world SpaceX launch data.
 
-📚 Table of Contents
-Problem Statement
+## 📚 Table of Contents
 
-Project Structure
+1. Problem Statement
 
-Methodology
+2. Project Structure
 
-Dashboard Preview
+3. Methodology
 
-Modeling & Results
+4. Dashboard Preview
 
-Key Skills & Tools
+5. Modeling & Results
 
-Certificate
+6. Key Skills & Tools
 
-🎯 Problem Statement
+7. Certificate
+
+## 🎯 Problem Statement
 SpaceX drastically reduces launch costs by recovering and reusing rocket boosters.
-Can we predict if a Falcon 9 first-stage will land successfully, and visualize what influences success?
+Can we predict whether a Falcon 9 first-stage will land successfully and visualize the factors that influence success?
 
 This solution empowers decision-making for bidding, cost estimation, and evaluating launch feasibility.
 
-🗂 Project Structure
+## 🗂 Project Structure
 bash
 Copy
 Edit
@@ -66,7 +67,7 @@ IBM-Data-Science-Capstone-SpaceX/
 │
 └── README.md
 
-🔍 Methodology
+## 🔍 Methodology
 1. Data Collection
 ✅ SpaceX Launch API (REST)
 
@@ -104,7 +105,7 @@ K-Nearest Neighbors (KNN)
 
 GridSearchCV for hyperparameter tuning
 
-📊 Dashboard Preview
+## 📊 Dashboard Preview
 Run the Dash app locally:
 
 bash
@@ -123,17 +124,19 @@ Key Features:
 ✅ Visualize payload-success relationships
 
 <p align="center"> <img src="visuals/dashboard_screenshot.png" width="800" alt="Dash App Screenshot"> </p>
-🧠 Modeling & Results
+
+## 🧠 Modeling & Results
 Algorithm	Accuracy (Test)	Best CV Score
 Logistic Regression	0.84	0.86
 Support Vector Machine	0.82	0.84
 Decision Tree Classifier	0.85	0.87
 K Nearest Neighbors	0.83	0.85
 
-🎯 Best Performing Model: Decision Tree Classifier with 87% cross-validation accuracy.
+## 🎯 Best Performing Model: Decision Tree Classifier with 87% cross-validation accuracy.
 
 <p align="center"> <img src="visuals/confusion_matrix.png" width="500" alt="Confusion Matrix"> </p>
-🛠 Key Skills & Tools
+
+## 🛠 Key Skills & Tools
 Languages: Python, SQL
 
 Libraries: Pandas, NumPy, Plotly, Scikit-Learn, Matplotlib, Seaborn, BeautifulSoup
@@ -146,7 +149,7 @@ ML Techniques: Classification, GridSearchCV, Confusion Matrix, Accuracy Comparis
 
 Version Control: Git & GitHub
 
-🏅 Certificate
+## 🏅 Certificate
 This project was submitted as part of:
 
 <p align="center"> <a href="https://coursera.org/share/YOUR-LINK-HERE"><img src="https://user-images.githubusercontent.com/84391594/161432000-ba6916f0-6f5e-49ab-9ff3-fae4f6f18596.png" height="300" alt="Coursera Certificate"></a> </p>
