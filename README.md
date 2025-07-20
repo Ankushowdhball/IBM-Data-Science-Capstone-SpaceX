@@ -2,7 +2,7 @@
 
 Welcome to the final project of the IBM Data Science Professional Certificate — Falcon 9 Landing Success Prediction and Analysis
 
-<p align="center"> <img src="visuals/dashboard_screenshot.png" width="900" alt="SpaceX Dashboard"> </p>
+<p align="center"> <img src="visuals/TitlePage.png" width="900" alt="Title Page"> </p>
 
 ## 📄 Summary
 This capstone project is the culmination of the IBM Data Science Professional Certificate program.
