@@ -151,7 +151,7 @@ Navigate to: http://localhost:8050
 ## 🏅 Certificate
 This project was submitted as part of:
 
-<p align="center"> <a href=""><img src="" height="300" alt="Coursera Certificate"></a> </p>
+<p align="center"> <a href="https://www.coursera.org/learn/applied-data-science-capstone/home/"><img src="https://www.coursera.org/account/accomplishments/certificate/AZCZEOF1JGBR" height="300" alt="Coursera Certificate"></a> </p>
 
 🙋‍♂️ Author
 Made with 💡 by Ankush Owdhball
