@@ -151,7 +151,7 @@ Navigate to: http://localhost:8050
 ## 🏅 Certificate
 This project was submitted as part of:
 
-<p align="center"> <a href="https://coursera.org/share/YOUR-LINK-HERE"><img src="https://user-images.githubusercontent.com/84391594/161432000-ba6916f0-6f5e-49ab-9ff3-fae4f6f18596.png" height="300" alt="Coursera Certificate"></a> </p>
+<p align="center"> <a href=""><img src="https://user-images.githubusercontent.com/84391594/161432000-ba6916f0-6f5e-49ab-9ff3-fae4f6f18596.png" height="300" alt="Coursera Certificate"></a> </p>
 
 🙋‍♂️ Author
 Made with 💡 by Ankush Owdhball
